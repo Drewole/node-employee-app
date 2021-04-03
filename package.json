@@ -1,0 +1,8 @@
+{
+  "name": "oop-team-portfolio",
+  "version": "1.0.0",
+  "description": "Command line application to generate a simple webpage with team information",
+  "main": "index.js",
+  "author": "Drew Olsen",
+  "license": "MIT"
+}
