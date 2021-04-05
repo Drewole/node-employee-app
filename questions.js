@@ -5,15 +5,20 @@ const questions = [
 		message: 'Name',
 		name: 'name',
 	},
+    {
+        type: 'number',
+        message: 'Employee ID',
+        name: 'id',
+    },
+    {
+        type: 'confirm',
+        message: 'Would you like to add another employee?',
+        name: 'addEmployee'
+    },
 	{
 		type: 'number',
 		message: 'Office Number',
 		name: 'officeNum',
-	},
-	{
-		type: 'number',
-		message: 'Employee ID',
-		name: 'id',
 	},
     {
 		type: 'input',
