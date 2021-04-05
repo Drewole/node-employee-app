@@ -1,4 +1,5 @@
 const Inquirer = require("inquirer")
+const Questions = require("./questions")
 
 const htmlTop = `<!DOCTYPE html>
 <html lang="en">
@@ -73,6 +74,9 @@ const htmlBottom = `</div>
           <script src="index.js"></script>
      </body>
 </html>`
+
+console.log(Questions)
+
 var prompt = function (question) {
 	return inquirer
 		.prompt(question)
@@ -149,7 +153,7 @@ class TeamLeader extends Employee {
           this.email = this.generateEmail();
           this.officeNum = officeNum;
      }
-     super(name,id);
+     super(name,id)
 
 }
 class Engineer extends Employee {
@@ -159,7 +163,7 @@ class Engineer extends Employee {
           this.github = github;
           this.email = this.generateEmail();
      }
-     super(name,id);
+     super(name,id)
 }
 class Intern extends Employee {
      constructor(name,id,school) {
@@ -168,5 +172,7 @@ class Intern extends Employee {
           this.school = school;
           this.email = this.generateEmail();
      }
-     super(name,id);
+     super(name,id)
 }
+
+const drew = new Intern ("Drew",5,"St. Johns");
