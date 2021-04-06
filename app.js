@@ -48,30 +48,26 @@ THEN I exit the application, and the HTML is generated
 What do we have to do.
 Email needs to be mailto
 
- - DONE make a new class for employee - Name, ID, Email
- - DONE make sub class for team manager - Office #
- - DONE make sub class for engineer - Github User
- - DONE make sub class for intern - School
- - make 
- - MOSTLY DONE setup inquirer questions
  - figure out how to do conditionals with inquirer
 
 */
 
 // WHEN I start the application
 // THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
+name
 
-class Employee {
-     constructor (name, id) {
-          this.name = name;
-          this.id = id;
-          this.email = email;
-     }
+id
 
-     generateEmail (){
-          this.email = `${this.name}@fakeemail.com`;
-     }
-}
+email
+
+getName()
+
+getId()
+
+getEmail()
+
+getRole()—returns 'Employee'
+
 //Classes setup
 class TeamLeader extends Employee {
      constructor (name,id,officeNum) {
