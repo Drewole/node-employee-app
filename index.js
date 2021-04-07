@@ -1,8 +1,13 @@
 const Inquirer = require("inquirer")
 const Fs = require('fs')
-const {questions,managerQuestions} = require("./questions")
+const {managerQuestions,
+      engineerQuestions,
+      internQuestions,
+      addEmployeeConfirm} = require("./questions")
 const Employee = require("./lib/Employee")
 const Manager = require("./lib/Manager")
+const Engineer = require("./lib/Engineer")
+const Intern = require("./lib/Intern")
 
 var questionGathering = function(questions){
   return Inquirer
