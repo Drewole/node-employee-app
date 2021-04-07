@@ -69,33 +69,3 @@ getEmail()
 getRole()—returns 'Employee'
 
 //Classes setup
-class TeamLeader extends Employee {
-     constructor (name,id,officeNum) {
-          this.name = name;
-          this.id = id;
-          this.email = this.generateEmail();
-          this.officeNum = officeNum;
-     }
-     super(name,id)
-
-}
-class Engineer extends Employee {
-     constructor(name,id,github) {
-          this.name = name;
-          this.id = id;
-          this.github = github;
-          this.email = this.generateEmail();
-     }
-     super(name,id)
-}
-class Intern extends Employee {
-     constructor(name,id,school) {
-          this.name = name;
-          this.id = id;
-          this.school = school;
-          this.email = this.generateEmail();
-     }
-     super(name,id)
-}
-
-const drew = new Intern ("Drew",5,"St. Johns");

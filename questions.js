@@ -61,22 +61,7 @@ const internQuestions = [
         name: 'id',
     },
 ]
-const questions = [
-    {
-		type: 'input',
-		message: 'First Name:',
-		name: 'firstName',
-	},
-    {
-		type: 'input',
-		message: 'Last Name:',
-		name: 'lastName',
-	},
-    {
-        type: 'number',
-        message: 'Employee ID:',
-        name: 'id',
-    },
+const addEmployeeConfirm = [
     {
         type: 'confirm',
         message: 'Would you like to add another employee?',
@@ -99,5 +84,6 @@ const questions = [
 module.exports = {
 	managerQuestions: managerQuestions,
 	engineerQuestions: engineerQuestions,
-	internQuestions: internQuestions
+	internQuestions: internQuestions,
+	addEmployeeConfirm: addEmployeeConfirm
 }
