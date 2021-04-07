@@ -3,12 +3,12 @@
 const managerQuestions = [
 	{
 		type: 'input',
-		message: 'First Name:',
+		message: 'Manager First Name:',
 		name: 'firstName',
 	},
     {
 		type: 'input',
-		message: 'Last Name:',
+		message: 'Manager Last Name:',
 		name: 'lastName',
 	},
     {

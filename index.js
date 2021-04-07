@@ -9,16 +9,18 @@ const Manager = require("./lib/Manager")
 const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 
+let fullTeam = [];
+
 var questionGathering = function(managerQuestions,engineerQuestions,internQuestions){
   return Inquirer
     .prompt(managerQuestions)
     .then(function(answers){
       // console.log(answers)
-      
-
-
-        if (answers.officeNum === true){
-        }
+      const managerInfo = new Manager(answers);
+      fullTeam.push(managerInfo);
+      console.log(fullTeam)
+        // if (answers.officeNum === true){
+        // }
     })
   
 }
