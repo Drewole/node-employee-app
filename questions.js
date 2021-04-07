@@ -16,6 +16,11 @@ const managerQuestions = [
         message: 'Employee ID:',
         name: 'id',
     },
+    {
+        type: 'input',
+        message: 'Email:',
+        name: 'email',
+    },
 	{
 		type: 'number',
 		message: 'Office Number',
@@ -39,6 +44,11 @@ const engineerQuestions = [
         name: 'id',
     },
 	{
+        type: 'input',
+        message: 'Email:',
+        name: 'email',
+    },
+	{
 		type: 'input',
 		message: 'Github Username',
 		name: 'github',
@@ -60,21 +70,16 @@ const internQuestions = [
         message: 'Employee ID:',
         name: 'id',
     },
-]
-const addEmployeeConfirm = [
-    {
-        type: 'confirm',
-        message: 'Would you like to add another employee?',
-        name: 'addEmployee'
-    },
-    
 	{
-		type: 'list',
-		message: 'What Type of Employee?',
-		choices: ["Team Manager","Engineer","Intern"],
-		name: 'employeeType',
-	}
-	
+        type: 'input',
+        message: 'Email:',
+        name: 'email',
+    },
+	{
+        type: 'input',
+        message: 'School:',
+        name: 'school',
+    }
 ]
 
 //Ok, thinking this is the flow

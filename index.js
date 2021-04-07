@@ -24,6 +24,22 @@ var questionGathering = function(managerQuestions,engineerQuestions,internQuesti
     })
   
 }
+
+const addEmployeeConfirm = [
+    {
+        type: 'confirm',
+        message: 'Would you like to add another employee?',
+        name: 'addEmployee'
+    },
+    
+	{
+		type: 'list',
+		message: 'What Type of Employee?',
+		choices: ["Team Manager","Engineer","Intern"],
+		name: 'employeeType',
+	}
+	
+]
 questionGathering(managerQuestions)
 
 /* 
