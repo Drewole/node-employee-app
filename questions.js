@@ -89,6 +89,5 @@ const internQuestions = [
 module.exports = {
 	managerQuestions: managerQuestions,
 	engineerQuestions: engineerQuestions,
-	internQuestions: internQuestions,
-	addEmployeeConfirm: addEmployeeConfirm
+	internQuestions: internQuestions
 }

@@ -2,8 +2,7 @@ const Inquirer = require("inquirer")
 const Fs = require('fs')
 const {managerQuestions,
       engineerQuestions,
-      internQuestions,
-      addEmployeeConfirm} = require("./questions")
+      internQuestions} = require("./questions")
 const Employee = require("./lib/Employee")
 const Manager = require("./lib/Manager")
 const Engineer = require("./lib/Engineer")
@@ -25,7 +24,7 @@ var questionGathering = function(managerQuestions,engineerQuestions,internQuesti
   
 }
 
-const addEmployeeConfirm = [
+const addMoreEmployees = [
     {
         type: 'confirm',
         message: 'Would you like to add another employee?',
