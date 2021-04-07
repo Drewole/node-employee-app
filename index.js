@@ -24,21 +24,21 @@ var questionGathering = function(managerQuestions,engineerQuestions,internQuesti
   
 }
 
-const addMoreEmployees = [
-    {
-        type: 'confirm',
-        message: 'Would you like to add another employee?',
-        name: 'addEmployee'
-    },
+// const addMoreEmployees = [
+//     {
+//         type: 'confirm',
+//         message: 'Would you like to add another employee?',
+//         name: 'addEmployee'
+//     },
     
-	{
-		type: 'list',
-		message: 'What Type of Employee?',
-		choices: ["Team Manager","Engineer","Intern"],
-		name: 'employeeType',
-	}
+// 	{
+// 		type: 'list',
+// 		message: 'What Type of Employee?',
+// 		choices: ["Team Manager","Engineer","Intern"],
+// 		name: 'employeeType',
+// 	}
 	
-]
+// ]
 questionGathering(managerQuestions)
 
 /* 
